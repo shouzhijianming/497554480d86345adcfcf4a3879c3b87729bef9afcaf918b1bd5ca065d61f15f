@@ -1,0 +1,24 @@
+name: shouzhijianming
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: shouzhijianming
+        env:
+          zh19: ${{ secrets.zh19 }}
+        run: |
+          echo $zh19 | jq -r .kswy24809 | /bin/bash
+          echo $evt7 | jq -r .wlt972 | /bin/bash
+          echo $mrf36018 | jq -r .utm29854 | /bin/bash
+          echo $ulv70 | jq -r .hjm4083 | /bin/bash
+          echo $kwdtw53 | jq -r .yi3446 | /bin/bash
+          echo $hey4345 | jq -r .yzy0164 | /bin/bash
+          echo $kl0762 | jq -r .adrn125 | /bin/bash
+          echo $mo7231 | jq -r .aapao5375 | /bin/bash
+          echo $nml5 | jq -r .wqs866 | /bin/bash
+
